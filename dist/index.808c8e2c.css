@@ -1,0 +1,163 @@
+.heading1 {
+  text-align: center;
+}
+
+.todo-wrapper {
+  background-color: #706f6f;
+  width: fit-content;
+  max-height: 80vh;
+  margin: 3% auto 0;
+  padding: 2%;
+  overflow-y: auto;
+  box-shadow: 0 5px 9px 2px #413f3f;
+}
+
+.todo-input {
+  border-bottom: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  display: flex;
+}
+
+.todo-input-item {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 25px;
+  display: flex;
+}
+
+.todo-input-item label {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.todo-input-item input {
+  border: none;
+  width: 250px;
+  padding: 8px;
+}
+
+.todo-input-item input:focus {
+  outline: 2px solid #df406d;
+}
+
+.primarybtn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #df406d;
+  border: none;
+  border-radius: 0;
+  width: 60px;
+  margin-top: 25px;
+  margin-left: 10px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.primarybtn:hover {
+  background-color: #c2355d;
+}
+
+.secondarybtn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #b1a6a9;
+  border: none;
+  border-radius: 0;
+  width: fit-content;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: #df406d;
+}
+
+.btn-area {
+  margin-bottom: 15px;
+}
+
+.todo-list {
+  flex-direction: column;
+  display: flex;
+}
+
+.todo-list-item {
+  background-color: gray;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 25px;
+  display: flex;
+  box-shadow: 0 3px 5px #393131;
+}
+
+.todo-list-item h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.todo-list-item p {
+  color: #fff;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 35px;
+
+  &:hover {
+    color: #ca2929;
+  }
+}
+
+.check-icon {
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  font-size: 25px;
+
+  &:hover {
+    color: #df406d;
+  }
+}
+
+.edit-icon {
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.edit-wrapper {
+  flex-direction: column;
+  padding: 10px;
+  display: flex;
+}
+
+.edit-wrapper input, textarea {
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin: 10px;
+  padding: 5px;
+
+  &:focus {
+    outline: 2px solid #df406d;
+  }
+}
+
+.edit-wrapper .primarybtn {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=index.808c8e2c.css.map */
