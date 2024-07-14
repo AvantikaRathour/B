@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Body from "./components/Body";
 import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
 import MyBooks from "./components/MyBooks";
+import SearchBar from "./components/SearchBar";
 const AppLayout=()=>{
    
 return ( 
@@ -31,7 +32,12 @@ const approuter=createBrowserRouter([
             {
                 path:"/home",
                 element:<Body/>
+            },
+            {
+                path:'/search',
+                element:<SearchBar/>
             }
+
         ]
     }
 ])

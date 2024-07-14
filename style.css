@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+html{
+  font-size: 62.5%;
+  margin: 0px;
+  padding: 0px;
+}
 
-html,
 body {
   margin: 0px;
   padding: 0px;
@@ -32,11 +36,11 @@ body {
 
 .myhead {
   width: 100%;
-  height: 80px;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  padding: 4rem 10rem;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -49,31 +53,54 @@ body {
   color: var(--pink-color);
   cursor: pointer;
 }
-
-ul {
+.myhead ul {
   display: flex;
   align-items: center;
 }
 
 .top_nav h4 {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 900;
 }
-
 .mid_nav li {
   display: inline-block;
-  margin: 0px 25px;
+  margin: 1rem 2.5rem;
+  position: relative;
+  cursor: pointer;
 }
-
-.mid_nav li a {
+.mid_nav .textstyle{
   color: var(--secondary-color);
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
   font-weight: 500;
-
-
+  &:hover{
+    color: rgb(223, 64, 109);
+  }
 }
-
+.drop:hover .dropmenu ,
+.drop:focus-within .dropmenu{
+  display: block;
+}
+.mid_nav li ul{
+  background-color: rgb(226, 238, 233);
+  position: absolute;
+  width: 15rem;
+  z-index: 9999; 
+  /* margin-top: 10px; */
+  padding: 0;
+  display: none;
+  cursor: pointer;
+  &:hover{
+    display: block;
+  }
+}
+.mid_nav li ul li{
+  width: 100%;
+  border-top: 1px solid rgb(187, 174, 174);
+  margin: 0px;
+  padding: 1rem;
+  
+}
 .top_nav {
   display: flex;
   align-items: center;
@@ -82,11 +109,11 @@ ul {
 
 .top_nav img,
 h4 {
-  margin: 0px 5px;
+  margin: 0px .5rem;
 }
 
 .menu-btn img {
-  width: 30px;
+  width: 3rem;
   height: auto;
 }
 
@@ -97,62 +124,25 @@ h4 {
 }
 
 .top_nav img {
-  width: 30px;
+  width: 3rem;
   height: auto;
 }
 
 .end_nav img {
-  width: 30px;
+  width: 3rem;
   height: auto;
-  margin: 10px;
+  margin: 1rem;
 
 }
 
 .end_nav {
-  margin: 0px 10px;
+  margin: 0px 1rem;
 }
 
 .end_nav img:hover {
 
   cursor: pointer;
 }
-
-/* @media (max-width:960px){
-    .mid_nav{
-      position: fixed;
-      top: 80px;
-      right: 0;
-      background: #eed6d6;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .mid_nav li{
-        margin: 10px;
-    }
-   .end_nav img{
-        width: 20px;
-   }
-   .menu-btn img{
-       display: inline;
-       width: 20px;
-   }
-} */
-/* @media (max-width:500px){
-    .end_nav img{
-        position: fixed;
-        top: 80px;
-        
-        background: #aa9f9f;
-       
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 20px;
-
-      }
-} */
 
 /* ============================================================ */
 .section {
@@ -171,15 +161,14 @@ h4 {
   border: none;
   outline: none;
   background-color: rgb(223, 64, 109);
-  padding: .5em .75em;
+  padding: 1.5rem 1.75rem;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 1.7rem;
   border-radius: 3px;
   box-shadow: 2px 2px 9px #888888;
   color: white;
   font-weight: bold;
-  margin-top: 2em;
-
+  margin-top: 2rem;
   &:hover {
     box-shadow: 0 1px 3px #725959;
     cursor: pointer;
@@ -187,65 +176,64 @@ h4 {
 }
 
 .title {
-  font-size: 5.5em;
+  font-size: 9.2rem;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: .5rem;
 }
 
 .info {
-  font-size: 1.5em;
+  font-size: 2.1rem;
   letter-spacing: 1px;
   line-height: 1.2em;
   color: #888888;
 }
-
 /* ============================== */
 /* bookslider */
+
 .box1 {
   position: absolute;
-  top: 100px;
-  right: 325px;
+  top: 10rem;
+  right: 32.5rem;
   background-size: cover;
-  width: 250px;
+  width: 25rem;
+  object-fit: cover;
   /* border: .5px solid gray; */
-  height: 350px;
+  height: 35rem;
   background-image: url("src/images/book-1.png");
-  &:hover{
+  /* &:hover{
     transform: scale(1.1);
-  }
+  } */
 }
-
 .box2 {
   position: absolute;
-  top: 250px;
-  right: 580px;
+  top: 25rem;
+  right: 58rem;
   background-size: cover;
-  width: 250px;
-  /* border: .5px solid gray; */
-  height: 350px;
+  width: 25rem;
+  height: 35rem;
+  object-fit: cover;
   background-image: url("src/images/book-5.png");
-  &:hover{
+  /* &:hover{
     transform: scale(0.9);
-  }
+  } */
 }
 
 .box3 {
   position: absolute;
-  top: 250px;
-  right: 70px;
+  top: 25rem;
+  right: 7rem;
   background-size: cover;
-  width: 250px;
-  /* border: .5px solid gray; */
-  height: 350px;
+  width: 25rem;
+  object-fit: cover;
+  height: 35rem;
   background-image: url("src/images/book-7.png");
-  &:hover{
+  /* &:hover{
     transform: scale(0.9);
-  }
+  } */
 }
-
 /* ================================ */
 .search-bar-cont {
-  margin-top: 150px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,7 +266,6 @@ h4 {
   box-shadow: 2px 2px 7px 1px gray;
   font-size: 1em;
   font-weight: bold;
-
   &:hover {
     box-shadow: 0 1px 3px #725959;
     cursor: pointer;
@@ -335,4 +322,96 @@ h4 {
   /* position: absolute; */
   font-size: 13px;
   font-weight: bold;
+
+}
+/* ============================= */
+@media (min-width:1252px) and (max-width: 1505px) {
+  /* CSS styles here */
+  .box1{
+    top: 10rem;
+    right: 18%;
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;  
+  }
+  .box2 {   
+    top: 25rem;
+    right: 33%; 
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;  
+  } 
+  .box3 {
+    top: 25rem;
+    right: 3%;
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;  
+  }
+}
+@media (max-width: 1250px) {
+  html{
+    font-size: 55%;    
+  }
+  .col {
+    width: 100%;
+    padding: 1vw 3vw;
+    margin-bottom: 0px;
+   
+  }
+  .box1{
+    top: 70%;
+    right: 39%; 
+  }
+  .box2 {   
+    top: 70%;
+    right: 68%;
+  } 
+  .box3 {
+    top: 70%;
+    right: 10%;
+  }
+}
+@media (max-width: 1050px) {
+  html{
+    font-size: 42%;    
+  }
+  .box1{
+    top: 50%;
+    right: 36%; 
+  }
+  .box2 {   
+    top: 50%;
+    right: 68%;
+  } 
+  .box3 {
+    top: 50%;
+    right: 4%;
+  }
+}
+@media(max-width:668px){
+  html{
+    font-size: 35%;
+  }
+  .box1{
+    top: 50%;
+    right: 17%;
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;  
+  }
+  .box2 {   
+    top: 50%;
+    right: 62%; 
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;  
+  } 
+  .box3 {
+    top: 74%;
+    right: 39%;
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;  
+  }
 }

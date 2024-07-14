@@ -8,7 +8,6 @@ const Body=()=>{
     return (
         <div className="container"> 
             <HeroSection/>
-            <SearchBar/>
         </div>
 
     )

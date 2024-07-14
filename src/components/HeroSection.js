@@ -1,5 +1,7 @@
 // import { Component } from "react";
 import Bookslider from "../components/bookslider";
+import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar";
 const HeroSection=()=>{
 return (
     <div className="section">
