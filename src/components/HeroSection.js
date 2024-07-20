@@ -13,7 +13,7 @@ return (
          <div className="col2">
            <Bookslider/>
          </div>
-
+        
     </div>
 )
 }

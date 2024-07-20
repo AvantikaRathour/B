@@ -12,6 +12,7 @@ body {
 
 * {
   box-sizing: border-box;
+  scrollbar-width: none;
   font-family: Zilla Slab, serif;
   list-style: none;
 }
@@ -132,6 +133,10 @@ body {
 
 .end_nav img:hover {
   cursor: pointer;
+}
+
+.container {
+  height: 100vh;
 }
 
 .section {
@@ -342,17 +347,17 @@ body {
   }
 
   .box1 {
-    top: 70%;
+    top: 60%;
     right: 39%;
   }
 
   .box2 {
-    top: 70%;
+    top: 60%;
     right: 68%;
   }
 
   .box3 {
-    top: 70%;
+    top: 60%;
     right: 10%;
   }
 }
@@ -363,17 +368,17 @@ body {
   }
 
   .box1 {
-    top: 50%;
+    top: 60%;
     right: 36%;
   }
 
   .box2 {
-    top: 50%;
+    top: 60%;
     right: 68%;
   }
 
   .box3 {
-    top: 50%;
+    top: 60%;
     right: 4%;
   }
 }
@@ -406,5 +411,46 @@ body {
     top: 74%;
     right: 39%;
   }
+}
+
+.quoteCont {
+  flex-direction: column;
+  align-items: center;
+  width: 90rem;
+  margin: auto;
+  display: flex;
+}
+
+.quote {
+  color: #4e4c4c;
+  padding: 2rem 10rem;
+  font-size: 3.2rem;
+}
+
+.line {
+  background-color: #7e6e6e;
+  width: 75rem;
+  height: .1rem;
+  margin: auto;
+}
+
+.quoteBottom {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0;
+  display: flex;
+}
+
+.author {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.quoteicons {
+  cursor: pointer;
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 2rem;
+  display: flex;
 }
 /*# sourceMappingURL=index.3a01df49.css.map */
