@@ -2,6 +2,7 @@ import HeroSection from "../components/HeroSection";
 import SearchBar from "../components/SearchBar";
 import BookCards  from "../components/BookCards";
 import QuoteGenerator from "./QuoteGenerator";
+import Recommend from "./Recommend";
 import { useState } from "react";
 // import bookslider from "../components/bookslider"
 const Body=()=>{
@@ -13,6 +14,10 @@ const Body=()=>{
         </div>
         <div>
         <QuoteGenerator/>
+        </div>
+        <div>
+            {/* <Recommend/> */}
+            
         </div>
 </div>
     )

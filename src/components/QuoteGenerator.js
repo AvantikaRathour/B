@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoReload } from "react-icons/io5";
 const QuoteGenerator = () => {
     const [quote, setQuote] = useState({
-        text: "You can always edit a bad page. You can’t edit a blank page.",
+        quote: "You can always edit a bad page. You can’t edit a blank page.",
         author: "Jodi Picoult"
     })
     const [quote2,setQuote2]=useState([]);
@@ -21,20 +21,20 @@ const QuoteGenerator = () => {
   }
      const  loadQuotes=async ()=>{
         try {
-          const response = await fetch("https://type.fit/api/quotes");
+          const response = await fetch("https://dummyjson.com/quotes");
             if (!response.ok) {
               throw new Error("Network response was not ok");
           }
             const data = await response.json();
-            setQuote2(data);
-            console.log(data); // Changed to log 'data' instead of 'quote2' to ensure correct logging
+            setQuote2(data.quotes);
+            console.log(data.quotes[8].quote); // Changed to log 'data' instead of 'quote2' to ensure correct logging
           } catch (error) {
             console.error("Error fetching quotes:", error);
           }
     }
     return (
         <div className="quoteCont">
-            <div className="quote">{quote.text}</div>
+            <div className="quote">{quote.quote}</div>
             <div>
                 <div className="line"></div>
                 <div className="quoteBottom">

@@ -20,13 +20,12 @@ const Header = () => {
                     <li class="text-color drop textstyle">Explore
                         <ul className="dropmenu">
                             <Link to="/mybooks"><li class="text-color">My Books</li></Link>
-                            <li>Quotes</li>
                         </ul>
                     </li>
                 </div>
                 <div className="end_nav">
                     <img src={searchlogo} onClick={handleClick} alt="" />
-                    <img src={profilelogo} alt="" />
+                    {/* <img src={profilelogo} alt="" /> */}
                     <img src={moonlogo} id="menu-button" alt="" />
                 </div>
                 <label class="menu-btn">

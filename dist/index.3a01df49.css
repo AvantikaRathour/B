@@ -168,6 +168,31 @@ body {
   }
 }
 
+.btnexp {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #df406d;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: auto;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+  box-shadow: 3px 3px 12px #0003;
+}
+
+.btnexp:hover {
+  cursor: pointer;
+  background-color: #c8365e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px #0000004d;
+}
+
 .title {
   margin-bottom: .5rem;
   font-size: 9.2rem;

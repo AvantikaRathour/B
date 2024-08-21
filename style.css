@@ -177,6 +177,31 @@ h4 {
     cursor: pointer;
   }
 }
+.btnexp {
+  border: none;
+  outline: none;
+  background-color: #df406d; /* Maintained the original color */
+  padding: 1.5rem 1.5rem; /* Reduced padding to make the button narrower */
+  text-transform: uppercase;
+  font-size: 2rem; /* Slightly larger font size */
+  border-radius: 8px; /* Increased border radius for a smoother look */
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* Softer shadow with transparency */
+  color: white;
+  font-weight: 700; /* Increased font weight */
+  margin-top: 2.5rem;
+  transition: all 0.3s ease; /* Added smooth transition for hover effect */
+  text-decoration: none; /* Removed underline */
+  display: inline-block; /* Ensures that text-decoration is applied */
+  width: auto; /* Makes the button size adjust to the content */
+}
+
+.btnexp:hover {
+  background-color: #c8365e; /* Darkened background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  cursor: pointer;
+}
+
 
 .title {
   font-size: 9.2rem;
