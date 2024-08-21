@@ -7,6 +7,9 @@ const Header = () => {
         const handleClick = () => {
             navigate('/search'); // or the current path
         };
+        const loginpage=()=>{
+            navigate('login');
+        }
     return (
         <div className="myhead">
             <div className="top_nav">
@@ -25,8 +28,8 @@ const Header = () => {
                 </div>
                 <div className="end_nav">
                     <img src={searchlogo} onClick={handleClick} alt="" />
-                    {/* <img src={profilelogo} alt="" /> */}
-                    <img src={moonlogo} id="menu-button" alt="" />
+                    <img src={profilelogo} alt="" onClick={loginpage} />
+                    {/* <img src={moonlogo} id="menu-button" alt="" /> */}
                 </div>
                 <label class="menu-btn">
                     <img src={menulogo} />
